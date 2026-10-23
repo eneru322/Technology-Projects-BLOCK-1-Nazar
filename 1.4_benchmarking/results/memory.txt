@@ -1,0 +1,4 @@
+Memory allocation time: 0.8290907400000833
+futuremakers@pi22jose:~/Technology-Projects-BLOCK-1-NAza/1.4_benchmarking $ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           905Mi       626Mi       119Mi        21Mi       234Mi       278Mi

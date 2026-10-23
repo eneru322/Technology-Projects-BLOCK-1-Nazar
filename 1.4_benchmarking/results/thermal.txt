@@ -1,0 +1,21 @@
+futuremakers@pi22jose:~/Technology-Projects-BLOCK-1-NAza/1.4_benchmarking $ sudo apt install stress
+Installing:                     
+  stress
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 151
+  Download size: 21.8 kB
+  Space needed: 99.3 kB / 22.1 GB available
+
+Get:1 http://deb.debian.org/debian trixie/main arm64 stress arm64 1.0.7-1+b1 [21.8 kB]
+Fetched 21.8 kB in 0s (219 kB/s)
+Selecting previously unselected package stress.
+(Reading database ... 121269 files and directories currently installed.)
+Preparing to unpack .../stress_1.0.7-1+b1_arm64.deb ...
+Unpacking stress (1.0.7-1+b1) ...
+Setting up stress (1.0.7-1+b1) ...
+Processing triggers for man-db (2.13.1-1) ...
+futuremakers@pi22jose:~/Technology-Projects-BLOCK-1-NAza/1.4_benchmarking $ stress --cpu 4 --timeout 30
+stress: info: [2355] dispatching hogs: 4 cpu, 0 io, 0 vm, 0 hdd
+stress: info: [2355] successful run completed in 30s
+futuremakers@pi22jose:~/Technology-Projects-BLOCK-1-NAza/1.4_benchmarking $ watch -n 2 vcgencmd measure_temp

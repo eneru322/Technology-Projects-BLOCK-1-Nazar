@@ -1,0 +1,8 @@
+futuremakers@pi22jose:~/Technology-Projects-BLOCK-1-NAza/1.4_benchmarking $ dd if=/dev/zero of=testfile.bin bs=100M count=1 oflag=direct
+1+0 records in
+1+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 14.2185 s, 7.4 MB/s
+futuremakers@pi22jose:~/Technology-Projects-BLOCK-1-NAza/1.4_benchmarking $ dd if=testfile.bin of=/dev/null bs=100M count=1 iflag=direct
+1+0 records in
+1+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 8.94902 s, 11.7 MB/s
